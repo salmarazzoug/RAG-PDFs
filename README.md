@@ -1,4 +1,5 @@
 
+
 ```markdown
 # RAG-PDFs – Assistant PDF Intelligent
 
@@ -9,19 +10,20 @@ Le système utilise **RAG (Retrieval-Augmented Generation)** pour rechercher dan
 ---
 
 ## Fonctionnalités principales
-- **Indexation PDF** : découpage en sections (chunking), création d’embeddings, stockage dans une base vectorielle (Pinecone)  
-- **Chatbot intelligent** : pose des questions et obtient des réponses basées sur le contenu indexé  
-- **API REST simple** : endpoints Express pour uploader des fichiers et poser des questions  
-- **Interface utilisateur basique** : HTML/CSS pour uploader un PDF et poser des questions  
-- **Réponses fiables** : le chatbot répond uniquement à partir du contexte disponible, aucune hallucination  
+- **Indexation PDF** : découpage en sections (chunking), création d’embeddings, stockage dans une base vectorielle (Pinecone).  
+- **Chatbot intelligent** : pose des questions et obtient des réponses basées sur le contenu indexé.  
+- **API REST simple** : endpoints Express pour uploader des fichiers et poser des questions.  
+- **Interface utilisateur basique** : HTML/CSS pour uploader un PDF et poser des questions.  
+- **Réponses fiables** : le chatbot répond uniquement à partir du contexte disponible, aucune hallucination.  
 
 ---
 
 ## Structure du projet
+
 ```
 
 public/
-index.html           # Interface HTML pour uploader et poser des questions
+│   index.html           # Interface HTML pour uploader et poser des questions
 .gitignore
 IndexRAG.js             # Logique d’indexation et préparation RAG
 RAG_chatbot.js          # Logique du chatbot / génération des réponses
@@ -84,7 +86,7 @@ const answer = await generate("Quels sont les ingrédients principaux du produit
 console.log(answer);
 ```
 
-### Serveur Express (server.js)
+### Serveur Express (`server.js`)
 
 ```javascript
 import express from "express";
@@ -165,7 +167,7 @@ npm start
 
 ## Exemple concret
 
-* Upload d’un PDF sur un produit cosmétique
+* Upload d’un PDF sur un produit cosmétique.
 * Question : “Quels sont les ingrédients utilisés ?”
 * Réponse générée : “Aqua, Glycerin, Niacinamide…”
 
@@ -173,16 +175,18 @@ npm start
 
 ## Points forts
 
-* Démonstration complète d’un pipeline **RAG/LLM**
-* API REST fonctionnelle + interface utilisateur simple
-* Respect strict du contexte des documents pour des réponses fiables
-* Utilisation de Pinecone pour les embeddings et indexation vectorielle
-* Projet clair et prêt à l’emploi pour un stage ML Engineer
+* Démonstration complète d’un pipeline **RAG/LLM**.
+* API REST fonctionnelle + interface utilisateur simple.
+* Respect strict du contexte des documents pour des réponses fiables.
+* Utilisation de Pinecone pour les embeddings et indexation vectorielle.
+* Projet clair et prêt à l’emploi pour un stage ML Engineer.
 
 ---
 
 ## Lien GitHub
 
 [https://github.com/salmarazzoug/RAG-PDFs](https://github.com/salmarazzoug/RAG-PDFs)
+
+
 
 ```
