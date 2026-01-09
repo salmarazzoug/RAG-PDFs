@@ -182,5 +182,3 @@ npm start
 ## Lien GitHub
 
 [https://github.com/salmarazzoug/RAG-PDFs](https://github.com/salmarazzoug/RAG-PDFs)
-
-```
